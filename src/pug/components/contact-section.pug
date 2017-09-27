@@ -1,0 +1,51 @@
+.contact-section#contact_me
+    .container
+        .contact-me
+            img(src="assets/images/Contact_me.png")
+        .separator
+            img(src="assets/images/Separator_contact.png")
+        .ill-be-glad
+            p I'll be glad to answer your questions!
+        .contact-form
+            .form(id="contact_form" action="#" method="POST" enctype="multipart/form-data")
+                .row
+                    input(id="name" class="input" placeholder="Name" type="text" value="")
+                .row
+                    input(id="email" class="input" placeholder="Email address" type="text" value="")
+                .row
+                    input(id="subject" class="input" placeholder="Subject" type="text" value="")
+                .row
+                    textarea(id="message" class="input" placeholder="Your message" rows="10" cols="20")
+                a(href="mailto:")
+                    input(id="submit_button" class="button" type="submit" value="Send message")
+        .show
+            a(href="about:blank")
+                p I am social
+        .blog-line
+            img(src="assets/images/Contact_line.png")
+        .social-blog
+            .social
+                .twitter-border
+                    .twitter
+                        a(href="http://www.twitter.com")
+                            i(class="fa fa-twitter fa-2x")
+                .twitter-border
+                    .twitter
+                        a(href="https://www.facebook.com/")
+                            i(class="fa fa-facebook-square fa-2x")
+                .twitter-border
+                    .twitter
+                        a(href="https://plus.google.com")
+                            i(class="fa fa-google-plus fa-2x")
+                .twitter-border
+                    .twitter
+                        a(href="https://www.pinterest.com/")
+                            i(class="fa fa-pinterest fa-2x")
+                .twitter-border
+                    .twitter
+                        a(href="https://www.linkedin.com/")
+                            i(class="fa fa-linkedin fa-2x")
+
+script(type="text/javascript" src="assets/js/vendor/jquery-2.1.3.min.js")
+script(type="text/javascript" src="assets/js/vendor/slick.min.js")
+script(src='assets/js/main.js')

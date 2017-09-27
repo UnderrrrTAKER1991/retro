@@ -1,0 +1,101 @@
+.slider-section {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .15rem 0;
+    background: #7cbcbc;
+
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+    .retro {
+        margin-top: 1.325rem;
+    }
+
+    .old-style {
+        margin-top: 1.675rem;
+    }
+
+    /* Slider */
+
+    .slider {
+        margin-top: 2.5rem;
+
+        .slide {
+            border: 0.5rem solid #fbfaf6;
+        }
+
+        .arrow {
+            display: inline-block;
+            position: absolute;
+            top: 10rem;
+            z-index: 999;
+            background-color: transparent;
+        }
+
+        .foto {
+            display: inline-block;
+
+        }
+
+        img {
+            width: 47rem;
+            height: 20rem;
+        }
+
+        .text {
+            padding-top: 0.6rem;
+            background-color: #fbfaf6;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+        }
+
+        .slick-arrow{
+            width: 34px;
+            height: 48px;
+            border-radius: 0% 100% 100% 0%;
+            overflow: hidden;
+            color: transparent;
+            background-color: #fbfaf6;
+            position: absolute;
+            top: 50%;
+            margin-top: -1.6rem;
+
+            padding: 0;
+            border-width: 0;
+        }
+
+        .slick-prev{
+            left: 0;
+            z-index: 1;
+        }
+
+        .slick-next{
+            right: 0;
+            transform: rotate(180deg);
+        }
+    }
+
+    .hello {
+        p {
+            margin-top: 1.6rem;
+        }
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        color: #f7ebd8;
+    }
+
+    .welcome {
+        p {
+            margin-top: 0.6rem;
+            margin-bottom: 2.7rem;
+        }
+        text-transform: uppercase;
+        font-size: 1.325rem;
+        color: #f7ebd8;
+    }
+
+}
+

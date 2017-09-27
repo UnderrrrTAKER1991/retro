@@ -1,0 +1,165 @@
+.contact-section {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: .15rem 0;
+  background: #54585f;
+
+  .container {
+    display: block;
+    text-align: center;
+  }
+
+  .contact-me {
+    margin-top: 2.5rem;
+
+    img {
+
+      @include mq(s) {
+        width: 60%;
+        height: auto;
+      }
+
+      @include mq(xs) {
+        width: 70%;
+        height: auto;
+      }
+    }
+  }
+
+  .separator {
+    margin-top: 0.4rem;
+
+    img {
+
+      @include mq(s) {
+        width: 20%;
+        height: auto;
+      }
+
+      @include mq(xs) {
+        width: 30%;
+        height: auto;
+      }
+    }
+  }
+
+  .ill-be-glad {
+    font-family: $rsr;
+    color: #f6edd8;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 0.6rem;
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.9rem;
+  }
+
+  .form {
+    text-align: left;
+  }
+
+  .button {
+    margin-top: 0.5rem;
+    font-family: $rsb;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    background: #fcfaf7;
+    padding: 0.625rem 0.85rem;
+    color: #383a3c;
+    text-decoration: none;
+  }
+
+  .input{
+    margin-top: 0.5rem;
+    font-family: $rsr;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    width: 24rem;
+    height: auto;
+    padding: 0.6rem 0.65rem;
+
+    @include mq(s) {
+      width: 100%;
+      height: auto;
+    }
+
+    @include mq(xs) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .show {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    a {
+      color: #f6edd8;
+      text-decoration: none;
+    }
+  }
+
+  .blog-line {
+    img {
+      color: #f6edd8;
+      margin-top: 0.45rem;
+    }
+  }
+
+  .social-blog {
+    display: inline-block;
+    text-align: center;
+    width: 24rem;
+
+    @include mq(xs) {
+      width: auto;
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: auto;
+    margin-top: 0.4rem;
+    margin-bottom: 3.65rem;
+
+    .twitter-border {
+      display: flex;
+      width: 4rem;
+      height: 4rem;
+      background-color: #f5eee3;
+      border-radius: 100%;
+      text-align: center;
+      justify-content: center;
+      border: 2px solid #f5eee3;
+      margin-top: 0.4rem;
+
+      @include mq(xs) {
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+      }
+
+      .twitter {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        border-radius: 100%;
+        border: 2px solid #383a3c;
+      }
+    }
+  }
+
+  .fa {
+    color: #383a3c;
+  }
+}

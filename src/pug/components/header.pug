@@ -1,0 +1,33 @@
+include ./mixins
+doctype html
+html
+  head
+    link(href="assets/css/style.css" rel="stylesheet")
+    link(rel="stylesheet" type="text/css" href="assets/css/vendor/slick/slick.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0") 
+  body
+    .header
+      .container
+        .about
+          p
+            a(name="about me")
+          p
+            a(href="#about_me") about me
+        .portfolio
+          p
+            a(name="portfolio")
+          p
+            a(href="#portfolio") portfolio
+        .logo
+          .img
+            img(src="assets/images/Logo.png")
+        .blog
+          p
+            a(name="my blog")
+          p
+            a(href="#my_blog") my blog
+        .contact
+          p
+            a(name="contact me")
+          p
+            a(href="#contact_me") contact me

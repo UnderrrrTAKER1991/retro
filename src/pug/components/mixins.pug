@@ -1,0 +1,30 @@
+mixin about_me(src,title,titlesmall,line,text,textbold,textitalic,textunderlined)
+  .column
+    img.column__img(src=src)
+    p.column__title=title
+    p.column__titlesmall=titlesmall
+    img.column__line(src=line)
+    p.column__text=text
+      span.column__text__bold=textbold
+      span.column__text__italic=textitalic
+      span.column__text__underlined=textunderlined
+
+mixin article(src,title,date,author,response,line,text,link)
+  .article
+    img.article__img(src=src)
+    .article__desc-block
+      p.article__title=title
+      .article__desc-block__date-author-responce
+        .article__desc-block__date-author
+          p.article__date=date
+          p.article__author=author
+        p.article__response=response
+      img.article__line(src=line)
+      .article__text-block
+        p.article__text=text
+        a.article__more(href=link)=' (More...)'
+
+        .twitter-border
+          .twitter
+            a(href="http://www.twitter.com")
+              i(class="fa fa-twitter fa-2x")

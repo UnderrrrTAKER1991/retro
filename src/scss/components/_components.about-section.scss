@@ -1,0 +1,112 @@
+.about-section {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .15rem 0;
+    background: #e2ddcd;
+
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+    .about {
+        margin-top: 2.5rem;
+
+        img {
+
+            @include mq(s) {
+                width: 50%;
+                height: auto;
+            }
+
+            @include mq(xs) {
+                width: 60%;
+                height: auto;
+            }
+        }
+    }
+
+    .separator {
+        margin-top: 0.4rem;
+
+        img {
+
+            @include mq(s) {
+                width: 20%;
+                height: auto;
+            }
+
+            @include mq(xs) {
+                width: 30%;
+                height: auto;
+            }
+        }
+    }
+
+    .iam {
+        font-family: $osr;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        margin-top: 0.6rem;
+    }
+
+    .columns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mq(s) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .column {
+            display: block;
+            text-align: center;
+            margin: 1.2rem 0.5rem 0 0.5rem;
+
+
+            &__img {
+
+                @include mq(s) {
+                    width: 30%;
+                    height: auto;
+                }
+
+                @include mq(xs) {
+                    width: 40%;
+                    height: auto;
+                }
+            }
+
+            &__title {
+                margin-top: 1.125rem;
+                font-size: 1.35rem;
+                text-transform: uppercase;
+            }
+
+            &__titlesmall {
+                margin-top: 0.925rem;
+                font-size: 0.7rem;
+                font-family: $rsr;
+                text-transform: uppercase;
+
+            }
+
+            &__line {
+                margin-top: 0.85rem;
+                text-transform: uppercase;
+            }
+
+            &__text {
+                text-align: left;
+                margin-top: 0.85rem;
+                margin-bottom: 3.65rem;
+                font-size: 0.7rem;
+                font-family: $rsr;
+            }
+        }
+    }
+}
